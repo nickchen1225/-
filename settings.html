@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>控制設定｜Claw Party</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html">🧸 Claw Party</a>
+  <nav><a href="index.html">首頁</a><a href="game.html">遊戲</a><a href="settings.html">控制設定</a></nav>
+</header>
+<main class="settings-page">
+  <section class="panel">
+    <h1>⚙️ 控制設定</h1>
+    <p class="muted">點擊按鍵後，再按下你想使用的新按鍵。</p>
+    <div class="key-grid">
+      <label>左移 <button class="key-btn" data-bind="left"></button></label>
+      <label>右移 <button class="key-btn" data-bind="right"></button></label>
+      <label>下降 <button class="key-btn" data-bind="down"></button></label>
+      <label>夾取 <button class="key-btn" data-bind="grab"></button></label>
+    </div>
+    <div class="settings-actions">
+      <button class="btn primary" id="saveBtn">💾 儲存設定</button>
+      <button class="btn" id="resetBtn">↩️ 恢復預設</button>
+      <a class="btn" href="game.html">🎮 回遊戲</a>
+    </div>
+    <div class="gamepad-box">
+      <h2>🕹️ 手把</h2>
+      <p id="gamepadStatus">正在檢查手把……</p>
+      <p class="muted">Xbox／USB 手把通常可直接使用。瀏覽器可能需要你先按一下手把按鍵。</p>
+    </div>
+  </section>
+</main>
+<footer>Claw Party · Controls are stored locally in your browser</footer>
+<script src="js/settings.js"></script>
+</body>
+</html>
